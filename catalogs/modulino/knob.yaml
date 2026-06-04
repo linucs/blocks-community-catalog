@@ -1,5 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-knob
-category: "Sensors"
+category: "Modulino::Sensors"
+colour: "#26A69A"
+description:
+  en: "Rotary encoder blocks for Modulino Knob (position and rotation)"
+  it: "Blocchi encoder rotativo per Modulino Knob (posizione e rotazione)"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-knob"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"
@@ -63,58 +68,5 @@ implementations:
         codegen:
           body:
             - "_knob.isPressed()"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoKnob"
-      declarations:
-        - "_knob = ModulinoKnob()"
-    blocks:
-      - blockly:
-          type: modulino_knob_value
-          message0: "🎛 knob value"
-          output: Number
-          tooltip: "Read the current rotary encoder position from Modulino Knob."
-          inputsInline: true
-        codegen:
-          body:
-            - "_knob.value"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]
-
-      - blockly:
-          type: modulino_knob_set
-          message0: "🎛 set knob to %1"
-          args0:
-            - type: input_value
-              name: VALUE
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Set the rotary encoder value of Modulino Knob."
-          inputsInline: true
-        codegen:
-          body:
-            - "_knob.value = {{VALUE}}"
-          inputDefaults:
-            VALUE: 0
-        tags: [actuator, i2c]
-
-      - blockly:
-          type: modulino_knob_pressed
-          message0: "🎛 knob button pressed"
-          output: Boolean
-          tooltip: "True if the push-button on the Modulino Knob is currently held down."
-          inputsInline: true
-        codegen:
-          body:
-            - "_knob.pressed"
           precedence: ATOMIC
         tags: [sensor, input, i2c, beginner]

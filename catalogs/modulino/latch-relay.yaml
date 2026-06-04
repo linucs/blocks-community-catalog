@@ -1,5 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-latch-relay
-category: "Sensors"
+category: "Modulino::Actuators"
+colour: "#26A69A"
+description:
+  en: "Latching relay control blocks for Modulino Latch Relay"
+  it: "Blocchi di controllo relè bistabile per Modulino Latch Relay"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-latch-relay"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"
@@ -56,53 +61,5 @@ implementations:
         codegen:
           body:
             - "_relay.getStatus()"
-          precedence: ATOMIC
-        tags: [sensor, relay, i2c]
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoLatchRelay"
-      declarations:
-        - "_relay = ModulinoLatchRelay()"
-    blocks:
-      - blockly:
-          type: modulino_relay_on
-          message0: "🔌 relay on"
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Turn on the Modulino Relay."
-          inputsInline: true
-        codegen:
-          body:
-            - "_relay.on()"
-        tags: [actuator, relay, i2c, beginner]
-
-      - blockly:
-          type: modulino_relay_off
-          message0: "🔌 relay off"
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Turn off the Modulino Relay."
-          inputsInline: true
-        codegen:
-          body:
-            - "_relay.off()"
-        tags: [actuator, relay, i2c, beginner]
-
-      - blockly:
-          type: modulino_relay_status
-          message0: "🔌 relay on?"
-          output: Boolean
-          tooltip: "True if the Modulino Relay is currently on."
-          inputsInline: true
-        codegen:
-          body:
-            - "_relay.is_on"
           precedence: ATOMIC
         tags: [sensor, relay, i2c]

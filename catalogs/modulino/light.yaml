@@ -1,5 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-light
-category: "Sensors"
+category: "Modulino::Sensors"
+colour: "#26A69A"
+description:
+  en: "Ambient light sensor blocks for Modulino Light"
+  it: "Blocchi sensore di luce ambientale per Modulino Light"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-light"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"
@@ -46,27 +51,3 @@ implementations:
             - "_light.getColorApproximate()"
           precedence: ATOMIC
         tags: [sensor, input, i2c]
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoLight"
-      declarations:
-        - "_light = ModulinoLight()"
-    blocks:
-      - blockly:
-          type: modulino_light_lux
-          message0: "☀ light (lux)"
-          output: Number
-          tooltip: "Read the ambient light level in lux from Modulino Light."
-          inputsInline: true
-        codegen:
-          body:
-            - "_light.lux"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]

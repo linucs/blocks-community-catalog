@@ -1,5 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-joystick
-category: "Sensors"
+category: "Modulino::Input"
+colour: "#26A69A"
+description:
+  en: "Analog joystick input blocks for Modulino Joystick (X, Y axes and button)"
+  it: "Blocchi joystick analogico per Modulino Joystick (assi X, Y e pulsante)"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-joystick"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"
@@ -68,65 +73,5 @@ implementations:
         codegen:
           body:
             - "_joy.isPressed()"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoJoystick"
-      declarations:
-        - "_joy = ModulinoJoystick()"
-    blocks:
-      - blockly:
-          type: modulino_joystick_update
-          message0: "🕹 update joystick"
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Poll the Modulino Joystick to refresh axis and button state."
-          inputsInline: true
-        codegen:
-          body:
-            - "_joy.update()"
-        tags: [actuator, i2c]
-
-      - blockly:
-          type: modulino_joystick_x
-          message0: "🕹 joystick X"
-          output: Number
-          tooltip: "Read the horizontal axis of Modulino Joystick (-127 to 127, 0 = centre)."
-          inputsInline: true
-        codegen:
-          body:
-            - "_joy.x"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]
-
-      - blockly:
-          type: modulino_joystick_y
-          message0: "🕹 joystick Y"
-          output: Number
-          tooltip: "Read the vertical axis of Modulino Joystick (-127 to 127, 0 = centre)."
-          inputsInline: true
-        codegen:
-          body:
-            - "_joy.y"
-          precedence: ATOMIC
-        tags: [sensor, input, i2c, beginner]
-
-      - blockly:
-          type: modulino_joystick_pressed
-          message0: "🕹 joystick button pressed"
-          output: Boolean
-          tooltip: "True if the push-button on Modulino Joystick is currently pressed."
-          inputsInline: true
-        codegen:
-          body:
-            - "_joy.button_pressed"
           precedence: ATOMIC
         tags: [sensor, input, i2c, beginner]

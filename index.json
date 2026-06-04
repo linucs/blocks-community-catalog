@@ -1,21 +1,27 @@
 {
   "version": 1,
-  "generated": "2026-06-04T05:58:22.664Z",
+  "generated": "2026-06-04T07:10:47.948Z",
   "entries": [
     {
       "id": "builtin_led_matrix",
       "category": "Displays",
+      "description": {
+        "en": "LED matrix display blocks for Arduino UNO R4 (12x8 grid)",
+        "it": "Blocchi display matrice LED per Arduino UNO R4 (griglia 12x8)"
+      },
       "runtimes": [
         "arduino:cpp"
       ],
-      "targets": [],
+      "targets": [
+        "arduino:renesas_uno:unor4wifi"
+      ],
       "blockCount": 5,
       "path": "catalogs/utils/led_matrix.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/utils/led_matrix.yaml"
     },
     {
       "id": "modulino_thermo",
-      "category": "Sensors",
+      "category": "Modulino::Sensors",
       "description": {
         "en": "Temperature and humidity sensor blocks for Modulino Thermo",
         "it": "Blocchi sensore di temperatura e umidità per Modulino Thermo"
@@ -31,7 +37,11 @@
     },
     {
       "id": "modulino-buttons",
-      "category": "Sensors",
+      "category": "Modulino::Input",
+      "description": {
+        "en": "Button input blocks for Modulino Buttons (A, B, C with press/long-press)",
+        "it": "Blocchi di input pulsanti per Modulino Buttons (A, B, C con pressione/pressione lunga)"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -43,7 +53,7 @@
     },
     {
       "id": "modulino-buzzer",
-      "category": "Sensors",
+      "category": "Modulino::Actuators",
       "description": {
         "en": "Buzzer and tone generation blocks for Modulino Buzzer",
         "it": "Blocchi buzzer e generazione toni per Modulino Buzzer"
@@ -59,7 +69,11 @@
     },
     {
       "id": "modulino-distance",
-      "category": "Sensors",
+      "category": "Modulino::Sensors",
+      "description": {
+        "en": "Time-of-flight distance sensor blocks for Modulino Distance",
+        "it": "Blocchi sensore di distanza time-of-flight per Modulino Distance"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -71,7 +85,11 @@
     },
     {
       "id": "modulino-joystick",
-      "category": "Sensors",
+      "category": "Modulino::Input",
+      "description": {
+        "en": "Analog joystick input blocks for Modulino Joystick (X, Y axes and button)",
+        "it": "Blocchi joystick analogico per Modulino Joystick (assi X, Y e pulsante)"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -83,7 +101,11 @@
     },
     {
       "id": "modulino-knob",
-      "category": "Sensors",
+      "category": "Modulino::Sensors",
+      "description": {
+        "en": "Rotary encoder blocks for Modulino Knob (position and rotation)",
+        "it": "Blocchi encoder rotativo per Modulino Knob (posizione e rotazione)"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -95,7 +117,11 @@
     },
     {
       "id": "modulino-latch-relay",
-      "category": "Sensors",
+      "category": "Modulino::Actuators",
+      "description": {
+        "en": "Latching relay control blocks for Modulino Latch Relay",
+        "it": "Blocchi di controllo relè bistabile per Modulino Latch Relay"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -107,7 +133,11 @@
     },
     {
       "id": "modulino-light",
-      "category": "Sensors",
+      "category": "Modulino::Sensors",
+      "description": {
+        "en": "Ambient light sensor blocks for Modulino Light",
+        "it": "Blocchi sensore di luce ambientale per Modulino Light"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -119,7 +149,11 @@
     },
     {
       "id": "modulino-movement",
-      "category": "Sensors",
+      "category": "Modulino::Sensors",
+      "description": {
+        "en": "Accelerometer and gyroscope blocks for Modulino Movement (IMU)",
+        "it": "Blocchi accelerometro e giroscopio per Modulino Movement (IMU)"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -131,7 +165,11 @@
     },
     {
       "id": "modulino-pixels",
-      "category": "Sensors",
+      "category": "Modulino::Actuators",
+      "description": {
+        "en": "RGB LED strip blocks for Modulino Pixels (8 addressable LEDs)",
+        "it": "Blocchi striscia LED RGB per Modulino Pixels (8 LED indirizzabili)"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"
@@ -143,7 +181,11 @@
     },
     {
       "id": "modulino-vibro",
-      "category": "Sensors",
+      "category": "Modulino::Actuators",
+      "description": {
+        "en": "Vibration motor control blocks for Modulino Vibro",
+        "it": "Blocchi controllo motore vibrazione per Modulino Vibro"
+      },
       "runtimes": [
         "arduino:cpp",
         "arduino:python"

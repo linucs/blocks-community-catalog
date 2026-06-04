@@ -1,9 +1,7 @@
-# Modulino Thermo — temperature + humidity sensor.
-# Loaded via FilesystemSource ($BLOCK_CATALOG_PATH) in dev,
-# or RemoteSource (iteration 5) in production.
-
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino_thermo
-category: "Sensors"
+category: "Modulino::Sensors"
+colour: "#26A69A"
 description:
   en: "Temperature and humidity sensor blocks for Modulino Thermo"
   it: "Blocchi sensore di temperatura e umidità per Modulino Thermo"
@@ -48,36 +46,4 @@ implementations:
         codegen:
           body:
             - "_thermo.getHumidity()"
-          precedence: ATOMIC
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoThermo"
-      declarations:
-        - "_thermo = ModulinoThermo()"
-    blocks:
-      - blockly:
-          type: modulino_thermo_temperature
-          message0: "🌡 temperature (°C)"
-          output: Number
-          tooltip: "Read the temperature in Celsius from Modulino Thermo."
-        codegen:
-          body:
-            - "_thermo.temperature"
-          precedence: ATOMIC
-
-      - blockly:
-          type: modulino_thermo_humidity
-          message0: "💧 humidity (%)"
-          output: Number
-          tooltip: "Read the relative humidity from Modulino Thermo."
-        codegen:
-          body:
-            - "_thermo.humidity"
           precedence: ATOMIC

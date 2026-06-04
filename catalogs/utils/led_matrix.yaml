@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/arduino/arduino-app-lab/main/ui-packages/ui-components/lib/blockly-editor/schemas/block-catalog_v1.schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: builtin_led_matrix
 category: "Displays"
 docs:

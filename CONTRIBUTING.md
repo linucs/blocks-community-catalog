@@ -8,7 +8,7 @@
 
 ## Catalog file format
 
-Each YAML file must conform to the [block-catalog v1 schema](https://github.com/linucs/vscode-blockly/blob/main/src/catalog/block-catalog_v1.schema.json).
+Each YAML file must conform to the [block-catalog v1 schema](https://github.com/linucs/vscode-blockly/blob/main/src/catalog/block-catalog_v1.schema.json). For the full technical reference on every key, section, and design decision, see the [Block Authoring Guide](https://github.com/linucs/vscode-blockly/blob/main/BLOCK_AUTHORING.md).
 
 Minimal example:
 

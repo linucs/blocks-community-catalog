@@ -1,5 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-vibro
-category: "Sensors"
+category: "Modulino::Actuators"
+colour: "#26A69A"
+description:
+  en: "Vibration motor control blocks for Modulino Vibro"
+  it: "Blocchi controllo motore vibrazione per Modulino Vibro"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-vibro"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"
@@ -52,45 +57,4 @@ implementations:
         codegen:
           body:
             - "_vibro.off();"
-        tags: [actuator, haptic, i2c]
-
-  # ─── Python (SBC side) ───
-  - runtime: "arduino:python"
-    dependencies:
-      - type: pip
-        name: "modulino"
-        minVersion: "0.5.0"
-    codegen:
-      imports:
-        - "from modulino import ModulinoVibro"
-      declarations:
-        - "_vibro = ModulinoVibro()"
-    blocks:
-      - blockly:
-          type: modulino_vibro_on
-          message0: "📳 vibrate for %1 ms"
-          args0:
-            - type: input_value
-              name: DURATION
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Activate the Modulino Vibro motor for the specified duration in milliseconds."
-          inputsInline: true
-        codegen:
-          body:
-            - "_vibro.on({{DURATION}})"
-          inputDefaults:
-            DURATION: 500
-        tags: [actuator, haptic, i2c, beginner]
-
-      - blockly:
-          type: modulino_vibro_off
-          message0: "📳 stop vibration"
-          previousStatement: null
-          nextStatement: null
-          tooltip: "Stop the Modulino Vibro motor immediately."
-          inputsInline: true
-        codegen:
-          body:
-            - "_vibro.off()"
         tags: [actuator, haptic, i2c]
