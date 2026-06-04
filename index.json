@@ -1,20 +1,14 @@
 {
   "version": 1,
-  "generated": "2026-06-04T07:10:47.948Z",
+  "generated": "2026-06-04T16:43:21.082Z",
   "entries": [
     {
       "id": "builtin_led_matrix",
       "category": "Displays",
-      "description": {
-        "en": "LED matrix display blocks for Arduino UNO R4 (12x8 grid)",
-        "it": "Blocchi display matrice LED per Arduino UNO R4 (griglia 12x8)"
-      },
       "runtimes": [
         "arduino:cpp"
       ],
-      "targets": [
-        "arduino:renesas_uno:unor4wifi"
-      ],
+      "targets": [],
       "blockCount": 5,
       "path": "catalogs/utils/led_matrix.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/utils/led_matrix.yaml"
@@ -27,11 +21,10 @@
         "it": "Blocchi sensore di temperatura e umidità per Modulino Thermo"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 4,
+      "blockCount": 2,
       "path": "catalogs/modulino/thermo.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/thermo.yaml"
     },
@@ -43,11 +36,10 @@
         "it": "Blocchi di input pulsanti per Modulino Buttons (A, B, C con pressione/pressione lunga)"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 6,
+      "blockCount": 3,
       "path": "catalogs/modulino/buttons.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buttons.yaml"
     },
@@ -59,11 +51,10 @@
         "it": "Blocchi buzzer e generazione toni per Modulino Buzzer"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 4,
+      "blockCount": 2,
       "path": "catalogs/modulino/buzzer.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buzzer.yaml"
     },
@@ -75,11 +66,10 @@
         "it": "Blocchi sensore di distanza time-of-flight per Modulino Distance"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 3,
+      "blockCount": 2,
       "path": "catalogs/modulino/distance.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/distance.yaml"
     },
@@ -91,11 +81,10 @@
         "it": "Blocchi joystick analogico per Modulino Joystick (assi X, Y e pulsante)"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 8,
+      "blockCount": 4,
       "path": "catalogs/modulino/joystick.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/joystick.yaml"
     },
@@ -107,11 +96,10 @@
         "it": "Blocchi encoder rotativo per Modulino Knob (posizione e rotazione)"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 6,
+      "blockCount": 3,
       "path": "catalogs/modulino/knob.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/knob.yaml"
     },
@@ -123,11 +111,10 @@
         "it": "Blocchi di controllo relè bistabile per Modulino Latch Relay"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 6,
+      "blockCount": 3,
       "path": "catalogs/modulino/latch-relay.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/latch-relay.yaml"
     },
@@ -139,11 +126,10 @@
         "it": "Blocchi sensore di luce ambientale per Modulino Light"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 3,
+      "blockCount": 2,
       "path": "catalogs/modulino/light.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/light.yaml"
     },
@@ -155,11 +141,10 @@
         "it": "Blocchi accelerometro e giroscopio per Modulino Movement (IMU)"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 5,
+      "blockCount": 3,
       "path": "catalogs/modulino/movement.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/movement.yaml"
     },
@@ -171,11 +156,10 @@
         "it": "Blocchi striscia LED RGB per Modulino Pixels (8 LED indirizzabili)"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 8,
+      "blockCount": 4,
       "path": "catalogs/modulino/pixels.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/pixels.yaml"
     },
@@ -187,11 +171,10 @@
         "it": "Blocchi controllo motore vibrazione per Modulino Vibro"
       },
       "runtimes": [
-        "arduino:cpp",
-        "arduino:python"
+        "arduino:cpp"
       ],
       "targets": [],
-      "blockCount": 4,
+      "blockCount": 2,
       "path": "catalogs/modulino/vibro.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/vibro.yaml"
     }
