@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "generated": "2026-06-04T05:58:22.664Z",
+  "entries": [
+    {
+      "id": "builtin_led_matrix",
+      "category": "Displays",
+      "runtimes": [
+        "arduino:cpp"
+      ],
+      "targets": [],
+      "blockCount": 5,
+      "path": "catalogs/utils/led_matrix.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/utils/led_matrix.yaml"
+    },
+    {
+      "id": "modulino_thermo",
+      "category": "Sensors",
+      "description": {
+        "en": "Temperature and humidity sensor blocks for Modulino Thermo",
+        "it": "Blocchi sensore di temperatura e umidità per Modulino Thermo"
+      },
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 4,
+      "path": "catalogs/modulino/thermo.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/thermo.yaml"
+    },
+    {
+      "id": "modulino-buttons",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 6,
+      "path": "catalogs/modulino/buttons.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buttons.yaml"
+    },
+    {
+      "id": "modulino-buzzer",
+      "category": "Sensors",
+      "description": {
+        "en": "Buzzer and tone generation blocks for Modulino Buzzer",
+        "it": "Blocchi buzzer e generazione toni per Modulino Buzzer"
+      },
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 4,
+      "path": "catalogs/modulino/buzzer.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buzzer.yaml"
+    },
+    {
+      "id": "modulino-distance",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 3,
+      "path": "catalogs/modulino/distance.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/distance.yaml"
+    },
+    {
+      "id": "modulino-joystick",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 8,
+      "path": "catalogs/modulino/joystick.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/joystick.yaml"
+    },
+    {
+      "id": "modulino-knob",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 6,
+      "path": "catalogs/modulino/knob.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/knob.yaml"
+    },
+    {
+      "id": "modulino-latch-relay",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 6,
+      "path": "catalogs/modulino/latch-relay.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/latch-relay.yaml"
+    },
+    {
+      "id": "modulino-light",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 3,
+      "path": "catalogs/modulino/light.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/light.yaml"
+    },
+    {
+      "id": "modulino-movement",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 5,
+      "path": "catalogs/modulino/movement.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/movement.yaml"
+    },
+    {
+      "id": "modulino-pixels",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 8,
+      "path": "catalogs/modulino/pixels.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/pixels.yaml"
+    },
+    {
+      "id": "modulino-vibro",
+      "category": "Sensors",
+      "runtimes": [
+        "arduino:cpp",
+        "arduino:python"
+      ],
+      "targets": [],
+      "blockCount": 4,
+      "path": "catalogs/modulino/vibro.yaml",
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/vibro.yaml"
+    }
+  ]
+}
