@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoBuzzer _buzzer;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_buzzer.begin();"
     blocks:
       - blockly:

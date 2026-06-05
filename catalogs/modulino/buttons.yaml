@@ -24,8 +24,8 @@ implementations:
       declarations:
         - "ModulinoButtons _buttons;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_buttons.begin();"
     blocks:
       - blockly:

@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoVibro _vibro;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_vibro.begin();"
     blocks:
       - blockly:

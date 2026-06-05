@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoDistance _distance;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_distance.begin();"
     blocks:
       - blockly:

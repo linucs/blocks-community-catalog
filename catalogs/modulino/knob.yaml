@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoKnob _knob;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_knob.begin();"
     blocks:
       - blockly:

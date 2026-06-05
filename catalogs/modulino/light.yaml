@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoLight _light;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_light.begin();"
     blocks:
       - blockly:

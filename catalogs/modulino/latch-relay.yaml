@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoLatchRelay _relay;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_relay.begin();"
     blocks:
       - blockly:

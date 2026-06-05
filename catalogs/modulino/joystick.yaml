@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoJoystick _joy;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_joy.begin();"
     blocks:
       - blockly:

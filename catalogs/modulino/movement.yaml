@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoMovement _movement;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_movement.begin();"
     blocks:
       - blockly:

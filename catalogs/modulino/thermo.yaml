@@ -26,8 +26,8 @@ implementations:
       declarations:
         - "ModulinoThermo _thermo;"
       setup:
-        - "Wire1.begin();"
-        - "Modulino.begin(Wire1);"
+        - "Wire.begin();"
+        - "Modulino.begin(Wire);"
         - "_thermo.begin();"
     blocks:
       - blockly:
