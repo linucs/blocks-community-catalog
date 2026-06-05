@@ -1,17 +1,23 @@
 {
   "version": 1,
-  "generated": "2026-06-05T03:27:24.081Z",
+  "generated": "2026-06-05T05:33:01.912Z",
   "entries": [
     {
       "id": "builtin_led_matrix",
       "category": "Displays",
+      "description": {
+        "en": "Uno R4 Led 12x8 LED matrix display.",
+        "it": "Display Led matrix 12x8 per Uno R4"
+      },
       "runtimes": [
         "arduino:cpp"
       ],
       "targets": [],
       "blockCount": 5,
       "path": "catalogs/utils/led_matrix.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/utils/led_matrix.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/utils/led_matrix.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino_thermo",
@@ -26,15 +32,14 @@
       "targets": [],
       "blockCount": 2,
       "path": "catalogs/modulino/thermo.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/thermo.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/thermo.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-buttons",
       "category": "Modulino::Input",
-      "description": {
-        "en": "Button input blocks for Modulino Buttons (A, B, C with press/long-press)",
-        "it": "Blocchi di input pulsanti per Modulino Buttons (A, B, C con pressione/pressione lunga)"
-      },
+      "description": "Modulino Buttons",
       "runtimes": [
         "arduino:cpp"
       ],
@@ -43,7 +48,7 @@
       "path": "catalogs/modulino/buttons.yaml",
       "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buttons.yaml",
       "author": "Lino Moretto",
-      "version": "1.0.0"
+      "version": "0.0.1"
     },
     {
       "id": "modulino-buzzer",
@@ -58,7 +63,9 @@
       "targets": [],
       "blockCount": 2,
       "path": "catalogs/modulino/buzzer.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buzzer.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buzzer.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-distance",
@@ -73,7 +80,9 @@
       "targets": [],
       "blockCount": 2,
       "path": "catalogs/modulino/distance.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/distance.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/distance.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-joystick",
@@ -88,7 +97,9 @@
       "targets": [],
       "blockCount": 4,
       "path": "catalogs/modulino/joystick.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/joystick.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/joystick.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-knob",
@@ -103,7 +114,9 @@
       "targets": [],
       "blockCount": 3,
       "path": "catalogs/modulino/knob.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/knob.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/knob.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-latch-relay",
@@ -118,7 +131,9 @@
       "targets": [],
       "blockCount": 3,
       "path": "catalogs/modulino/latch-relay.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/latch-relay.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/latch-relay.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-light",
@@ -133,7 +148,9 @@
       "targets": [],
       "blockCount": 2,
       "path": "catalogs/modulino/light.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/light.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/light.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-movement",
@@ -148,7 +165,9 @@
       "targets": [],
       "blockCount": 3,
       "path": "catalogs/modulino/movement.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/movement.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/movement.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-pixels",
@@ -163,7 +182,9 @@
       "targets": [],
       "blockCount": 4,
       "path": "catalogs/modulino/pixels.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/pixels.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/pixels.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     },
     {
       "id": "modulino-vibro",
@@ -178,7 +199,9 @@
       "targets": [],
       "blockCount": 2,
       "path": "catalogs/modulino/vibro.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/vibro.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/vibro.yaml",
+      "author": "Lino Moretto",
+      "version": "0.0.1"
     }
   ]
 }
