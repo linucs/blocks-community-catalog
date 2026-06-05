@@ -1,10 +1,10 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-buttons
+author: Lino Moretto
+version: 0.0.1
 category: "Modulino::Input"
 colour: "#26A69A"
-description:
-  en: "Button input blocks for Modulino Buttons (A, B, C with press/long-press)"
-  it: "Blocchi di input pulsanti per Modulino Buttons (A, B, C con pressione/pressione lunga)"
+description: "Modulino Buttons"
 docs:
   datasheet: "https://docs.arduino.cc/hardware/modulino-buttons"
   library: "https://www.arduino.cc/reference/en/libraries/modulino/"

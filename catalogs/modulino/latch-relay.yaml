@@ -1,5 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/linucs/vscode-blockly/refs/heads/main/src/catalog/block-catalog_v1.schema.json
 id: modulino-latch-relay
+author: Lino Moretto
+version: 0.0.1
 category: "Modulino::Actuators"
 colour: "#26A69A"
 description:

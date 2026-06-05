@@ -50,7 +50,7 @@ async function main() {
                 const targets = [...new Set(doc.implementations.flatMap(i => i.targets || []))];
                 const blockCount = doc.implementations.reduce((sum, i) => sum + (i.blocks?.length || 0), 0);
 
-                entries.push({
+                const entry = {
                     id: doc.id,
                     category: doc.category || '',
                     description: doc.description,
@@ -59,7 +59,10 @@ async function main() {
                     blockCount,
                     path: relPath,
                     downloadUrl: `https://raw.githubusercontent.com/${REPO_OWNER}/${REPO_NAME}/${BRANCH}/${relPath}`,
-                });
+                };
+                if (doc.author) entry.author = doc.author;
+                if (doc.version) entry.version = doc.version;
+                entries.push(entry);
             }
         } catch (err) {
             console.warn(`Warning: failed to parse ${file}: ${err.message}`);

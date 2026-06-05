@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-06-04T16:43:21.082Z",
+  "generated": "2026-06-05T03:27:24.081Z",
   "entries": [
     {
       "id": "builtin_led_matrix",
@@ -41,7 +41,9 @@
       "targets": [],
       "blockCount": 3,
       "path": "catalogs/modulino/buttons.yaml",
-      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buttons.yaml"
+      "downloadUrl": "https://raw.githubusercontent.com/linucs/blocks-community-catalog/main/catalogs/modulino/buttons.yaml",
+      "author": "Lino Moretto",
+      "version": "1.0.0"
     },
     {
       "id": "modulino-buzzer",
